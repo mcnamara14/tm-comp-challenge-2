@@ -1,0 +1,171 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+body {
+    background: #efefef;;
+}
+h4 {
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+h4:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/*header styles*/
+header {
+  width: 100%;
+  height: 20vh;
+  background: #2B2B2B;
+  position: relative;
+}
+.header-account-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+}
+.account-author-image {
+    margin-right: 10px;
+}
+.header-account-dropdown a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #28b4ff;
+}
+.header-logo {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.header-logo img {
+  height: 40px;
+}
+.header-main-links {
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    align-items: center;
+}
+.header-main-links img {
+  height: 12px;
+}
+.header-account-down-arrow {
+  margin-left: 10px;
+  display: flex;
+}
+
+/*main content styles*/
+main h1 {
+  color: #4d4d4d;
+  font-weight: 300;
+  width: 100%;
+  margin-bottom: 30px;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4d4d4d;
+  font-weight: 300;
+  font-size: 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+main {
+    padding: 2%;
+}
+.card {
+  background: #fff;
+  box-shadow: 0 2px 6px 0 #ccc;
+  word-break: break-all;
+}
+.card-info {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.card-header-image {
+    background: url(images/otters-sleeping.png);
+    height: 145px;
+    background-size: cover;
+    position: relative;
+}
+.card-share-link {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-views {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-views p {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 400; 
+  color: #fff;
+}
+.card-views .card-views-count {
+  font-size: 25px;
+}
+.timestamp {
+    margin-top: 4px;
+    color: #999;
+    font-size: 11px;
+}
+.card-main-link {
+    padding: 4%;
+    background: #efefef;
+    font-size: 11px;
+    margin: 3% 0;
+    line-height: 16px;
+}
+.card-main-link a {
+    color: #666;
+}
+.card-small-header {
+  font-size: 10px;
+  margin-bottom: 2px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+}
+h3 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: 700;
+}
+.card-attachments-count {
+    margin: 3px 0 10px 0;
+    font-size: 28px;
+    color: #25b5fc;
+}
+}
