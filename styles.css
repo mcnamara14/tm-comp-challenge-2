@@ -36,6 +36,9 @@ header {
 .account-author-image {
     margin-right: 10px;
 }
+.header-left-link-image {
+  height: 22px;
+}
 .header-account-dropdown a {
   text-decoration: none;
   font-size: 12px;
