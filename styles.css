@@ -3,16 +3,24 @@
   color: #4d4d4d;
   font-weight: 400;
 }
+html {
+}
 body {
-    background: #efefef;;
+    background-color: #bfe7fd;
+    background-image: url(images/background.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 h4 {
-    font-size: 14px;
-    color: #999;
+    font-size: 11px;
+    color: #fff;
     font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-right: 30px;
     margin-left: 10px;
+    line-height: 14px;
+    font-family: 'Press Start 2P', cursive;
 }
 h4:hover {
   color: #fff;
@@ -42,7 +50,7 @@ header {
 .header-account-dropdown a {
   text-decoration: none;
   font-size: 12px;
-  color: #28b4ff;
+  color: #f9b84f;
 }
 .header-logo {
     position: absolute;
@@ -50,18 +58,24 @@ header {
     bottom: 30px;
 }
 .header-logo img {
-  height: 40px;
+  height: 50px;
 }
-.header-main-links {
+.main-nav {
+  font-family: 'Press Start 2P', cursive;
     display: flex;
     bottom: 0;
     position: absolute;
     margin-bottom: 20px;
-    margin-left: 2%;
+    padding-left: 20px;
     align-items: center;
 }
-.header-main-links img {
+.main-nav img {
   height: 12px;
+}
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 .header-account-down-arrow {
   margin-left: 10px;
@@ -70,10 +84,12 @@ header {
 
 /*main content styles*/
 main h1 {
-  color: #4d4d4d;
+  color: #f9b84f;
   font-weight: 300;
   width: 100%;
   margin-bottom: 30px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
 }
 h2 {
   margin-top: 0;
@@ -95,6 +111,8 @@ main {
   background: #fff;
   box-shadow: 0 2px 6px 0 #ccc;
   word-break: break-all;
+  position: relative;
+  overflow: hidden;
 }
 .card-info {
     padding: 5%;
@@ -106,7 +124,31 @@ main {
     height: 145px;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.card.one .card-header-image {
+    background: url(images/bubble-bobble-bg.jpg);
+    background-position: center;
+}
+.card.two .card-header-image {
+    background: url(images/river-city-ransom-bg.jpg);
+    background-position: center;
+}
+.card.three .card-header-image {
+    background: url(images/burger-time-bg.jpg);
+    background-position: center;
+}
+.card-header-border {
+    background-image: url(images/card-header-img-bottom-border.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+} 
 .card-share-link {
     height: 50px;
     width: 50px;
@@ -170,5 +212,41 @@ h3 {
     margin: 3px 0 10px 0;
     font-size: 28px;
     color: #25b5fc;
+    text-transform: uppercase;  
 }
+.card-stripes {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media only screen and (max-width: 850px) {
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header-logo {
+    position: absolute;
+    right: 20px;
+    width: 100%;
+    top: 20px;
+    left: 20px;
+}
+.header-account-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+
 }
