@@ -119,6 +119,9 @@ main {
     display: flex;
     flex-direction: column;
 }
+label, input { 
+  display: none;
+}
 .card-header-image {
     background: url(images/otters-sleeping.png);
     height: 145px;
@@ -236,17 +239,100 @@ h3 {
     position: absolute;
     right: 20px;
     width: 100%;
-    top: 20px;
+    top: 15px;
     left: 20px;
 }
 .header-account-dropdown {
     position: absolute;
-    right: 20px;
-    top: 35px;
+    right: 25px;
+    top: 20px;
 }
 header {
     display: flex;
     justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+.header-logo img {
+    height: 40px;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h4 {
+    font-size: 9px;
+    margin-right: 0px;
+    text-align: center;
+    margin-left: 0px;
+}
+.main-nav {
+    display: flex;
+    width: 90%;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo {
+    height: 54px;
+    display: block;
+
+  }
+.card-info {
+  display: none;
+  transition: all 0.25s ease-out;
+}
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+label { 
+    display: inline-block;
+    margin: 3% 0 3% 40%;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    color: #f9b84f;
+    background: #CC3C3C;
+    border-radius: 36px;
+    font-size: 14px;
+    border: 5px;
+    transition: 1s;
+}
+label:hover {
+  cursor: pointer;
+}
+input {
+  display: block;
+}
+
+#toggle-1:checked ~ .card-one {
+   display: block;
+   transition: all 0.25s ease-out;
+
+}
+
+#toggle-2:checked ~ .card-two {
+   display: block;
+   transition: 1s;
+}
+
+#toggle-3:checked ~ .card-three {
+   display: block;
+   transition: all 0.25s ease-out;
 }
 
 }
