@@ -3,28 +3,12 @@
   color: #4d4d4d;
   font-weight: 400;
 }
-html {
-}
+
 body {
-    background-color: #bfe7fd;
-    background-image: url(images/background.jpg);
-    background-position: bottom;
-    background-repeat: repeat-x;
-}
-h4 {
-    font-size: 11px;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-right: 30px;
-    margin-left: 10px;
-    line-height: 14px;
-    font-family: 'Press Start 2P', cursive;
-}
-h4:hover {
-  color: #fff;
-  cursor: pointer;
+  background-color: #bfe7fd;
+  background-image: url(images/nintendo-background.jpg);
+  background-position: top;
+  background-repeat: repeat-x;
 }
 
 /*header styles*/
@@ -34,79 +18,107 @@ header {
   background: #CC3C3C;
   position: relative;
 }
-.header-account-dropdown {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    display: flex;
-    align-items: center;
+
+h4 {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  margin-left: 10px;
+  line-height: 14px;
+
 }
-.account-author-image {
-    margin-right: 10px;
+
+h4:hover {
+  color: #fff;
+  cursor: pointer;
 }
-.header-left-link-image {
-  height: 22px;
-}
-.header-account-dropdown a {
+
+h4 a {
+  color: #fff;
   text-decoration: none;
-  font-size: 12px;
-  color: #f9b84f;
 }
-.header-logo {
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
+
+.header-account-dropdown {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  display: flex;
+  align-items: center;
 }
-.header-logo img {
-  height: 50px;
+
+.account-author-image {
+  margin-right: 10px;
 }
-.main-nav {
-  font-family: 'Press Start 2P', cursive;
-    display: flex;
-    bottom: 0;
-    position: absolute;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    align-items: center;
-}
-.main-nav img {
+
+.header-left-link-image {
   height: 12px;
 }
-li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
+
 .header-account-down-arrow {
   margin-left: 10px;
   display: flex;
 }
 
-/*main content styles*/
+.header-account-dropdown a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #f9b84f;
+}
+
+.header-logo {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+nav img {
+  height: 12px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+
+/*card styles*/
+main {
+    padding: 2%;
+}
+
 main h1 {
   color: #f9b84f;
-  font-weight: 300;
+  font-weight: bold;
   width: 100%;
   margin-bottom: 30px;
-  font-size: 20px;
-  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
 }
-h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #4d4d4d;
-  font-weight: 300;
-  font-size: 15px;
-}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
 }
-main {
-    padding: 2%;
-}
+
 .card {
   background: #fff;
   box-shadow: 0 2px 6px 0 #ccc;
@@ -114,65 +126,55 @@ main {
   position: relative;
   overflow: hidden;
 }
-.card-info {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
+
+.card-header-img {
+  background: #CC3C3C;
+  height: 145px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.card-header-border {
+  background-image: url(images/card-header-img-bottom-border.png);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+} 
+
+.card-info {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  background: url(images/card-background.jpg);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4d4d4d;
+  font-weight: 300;
+  font-size: 15px;
+}
+
 label, input { 
   display: none;
 }
-.card-header-image {
-    background: url(images/otters-sleeping.png);
-    height: 145px;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.card-views {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.card.one .card-header-image {
-    background: url(images/bubble-bobble-bg.jpg);
-    background-position: center;
-}
-.card.two .card-header-image {
-    background: url(images/river-city-ransom-bg.jpg);
-    background-position: center;
-}
-.card.three .card-header-image {
-    background: url(images/burger-time-bg.jpg);
-    background-position: center;
-}
-.card-header-border {
-    background-image: url(images/card-header-img-bottom-border.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 10px;
-    position: absolute;
-    bottom: 0;
-} 
-.card-share-link {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card-views {
-    color: #fff;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 .card-views p {
   margin: 0;
   padding: 0;
@@ -181,158 +183,272 @@ label, input {
   font-weight: 400; 
   color: #fff;
 }
+
 .card-views .card-views-count {
   font-size: 25px;
 }
+
 .timestamp {
-    margin-top: 4px;
-    color: #999;
-    font-size: 11px;
+  margin-top: 4px;
+  color: #999;
+  font-size: 11px;
 }
+
 .card-main-link {
-    padding: 4%;
-    background: #efefef;
-    font-size: 11px;
-    margin: 3% 0;
-    line-height: 16px;
+  padding: 4%;
+  background: #efefef;
+  font-size: 11px;
+  white-space: pre-wrap;
+  margin: 20px 0;
+  line-height: 16px;
+  height: 82px;
+  word-break: normal;
+  display: flex;
+  align-items: center;
 }
+
 .card-main-link a {
-    color: #666;
+  color: #666;
 }
+
 .card-small-header {
   font-size: 10px;
   margin-bottom: 2px;
   color: #4d4d4d;
   text-transform: uppercase;
 }
+
 h3 {
   margin: 0 0 5px 0;
   font-size: 14px;
   color: #4d4d4d;
   font-weight: 700;
 }
+
 .card-attachments-count {
-    margin: 3px 0 10px 0;
-    font-size: 28px;
-    color: #25b5fc;
-    text-transform: uppercase;  
+  margin: 3px 0 10px 0;
+  font-size: 28px;
+  color: #25b5fc;
+  text-transform: uppercase;  
 }
+
 .card-stripes {
-    position: absolute;
-    bottom: -60px;
-    right: 0;
+  position: absolute;
+  bottom: -60px;
+  right: 0;
 }
 
-@media only screen and (max-width: 1200px) {
-  .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-}
-
-@media only screen and (max-width: 850px) {
-  .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.header-logo {
-    position: absolute;
-    right: 20px;
-    width: 100%;
-    top: 15px;
-    left: 20px;
-}
-.header-account-dropdown {
-    position: absolute;
-    right: 25px;
-    top: 20px;
-}
-header {
-    display: flex;
-    justify-content: center;
-}
-h1 {
-    text-align: center;
-}
-.header-logo img {
-    height: 40px;
-}
-
-}
-
-@media only screen and (max-width: 600px) {
-  .grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-li {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-h4 {
-    font-size: 9px;
-    margin-right: 0px;
-    text-align: center;
-    margin-left: 0px;
-}
-.main-nav {
-    display: flex;
-    width: 90%;
-    padding-left: 0px;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.header-logo {
-    height: 54px;
-    display: block;
-
-  }
-.card-info {
-  display: none;
-  transition: all 0.25s ease-out;
-}
 input[type=checkbox] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
+ position: absolute;
+ top: -9999px;
+ left: -9999px;
 }
-label { 
-    display: inline-block;
-    margin: 3% 0 3% 40%;
-    cursor: pointer;
-    padding: 10px 15px 10px 15px;
-    color: #f9b84f;
-    background: #CC3C3C;
-    border-radius: 36px;
-    font-size: 14px;
-    border: 5px;
-    transition: 1s;
+
+.toggle-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
+
 label:hover {
   cursor: pointer;
 }
+
 input {
   display: block;
 }
 
-#toggle-1:checked ~ .card-one {
-   display: block;
-   transition: all 0.25s ease-out;
+.card .hero-img {
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 70%;
+  background-repeat: no-repeat;
+}
+
+.card.one .hero-img {
+  background-image: url(images/bubble-bobble-heros.png);
+}
+
+.card.two .hero-img {
+  background-image: url(images/river-city-ransom-heros.png);
+}
+
+.card.three .hero-img {
+  background-image: url(images/zelda-hero.png);
+}
+
+.card.four .hero-img {
+  background-image: url(images/ninja-turtles-heros.png);
+}
+
+.card.five .hero-img {
+  background-image: url(images/mario-bros-heros.png);
+}
+
+.card.six .hero-img {
+  background-image: url(images/kirby-hero.png);
+}
+
+.card.seven .hero-img {
+  background-image: url(images/contra-heros.png);
+}
+
+.card.eight .hero-img {
+  background-image: url(images/pac-man-hero.png);
+}
+
+@media only screen and (max-width: 1200px) {
+
+nav {
+  width: 80%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 }
 
-#toggle-2:checked ~ .card-two {
-   display: block;
-   transition: 1s;
+@media only screen and (max-width: 850px) {
+
+/*header styles*/
+header {
+  display: flex;
+  justify-content: center;
 }
 
-#toggle-3:checked ~ .card-three {
-   display: block;
-   transition: all 0.25s ease-out;
+nav ul {
+  justify-content: space-between;
+  position: relative;
+  margin-top: 85px;
+  margin-left: 0;
+  padding: 0;
+}
+
+.header-logo {
+  position: absolute;
+  right: 20px;
+  width: auto;
+  top: 15px;
+  left: 20px;
+}
+
+.header-logo img {
+  height: 40px;
+}
+
+.header-account-dropdown {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+
+/*card styles*/
+h1 {
+    text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+/*header styles*/
+.header-logo {
+  height: 54px;
+  display: block;
+
+}
+
+nav {
+  display: flex;
+  width: 75%;
+  padding-left: 0px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 9px;
+  margin-right: 0px;
+  text-align: center;
+  margin-left: 0px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*card styles*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.card-info {
+  display: none;
+  transition: all 0.25s ease-out;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label { 
+  display: inline-block;
+  margin: 3% 0 3% 40%;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  color: #f9b84f;
+  background: #CC3C3C;
+  border-radius: 36px;
+  font-size: 14px;
+  border: 5px;
+  transition: 1s;
+}
+
+.header-img .toggle-img {
+  height: 30px;
+  width: 20px;
+  margin: 0;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input {
+  display: block;
+}
+
+.card-stripes {
+  display: none;
+}
+
+#toggle-one:checked ~ .one, #toggle-two:checked ~ .two, #toggle-three:checked ~ .three, #toggle-four:checked ~ .four, #toggle-five:checked ~ .five, #toggle-six:checked ~ .six, #toggle-seven:checked ~ .seven, #toggle-eight:checked ~ .eight {
+  display: block;
 }
 
 }
