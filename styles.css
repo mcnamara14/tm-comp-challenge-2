@@ -7,8 +7,9 @@
 body {
   background-color: #bfe7fd;
   background-image: url(images/nintendo-background.jpg);
-  background-position: top;
+  background-position: bottom;
   background-repeat: repeat-x;
+  padding-bottom: 250px;
 }
 
 /*header styles*/
@@ -150,7 +151,7 @@ main h1 {
   padding: 5%;
   display: flex;
   flex-direction: column;
-  background: url(images/card-background.jpg);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 h2 {
