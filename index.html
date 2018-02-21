@@ -3,10 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Static Comp 1</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>Static Comp 2</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
@@ -14,173 +11,424 @@
 </head>
 
 <body>
-
-  <header>
-
-    <section class="header-account-dropdown">
-      
-      <a class="account-author-image" href="#" role="button"><img class="header-left-link-image" src="images/user.svg" /></a>
-      <a href="#"  role="button">Admin Username</a>
-      <a class="header-account-down-arrow" href="#" role="button"><img class="header-middle-link-image"  src="images/sort-down.svg" /></a>
+  <header role="header">
+    <section class="header-account-dropdown" aria-expanded="true">
+      <a class="account-author-image" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" role="button" alt="Account user image" aria-label="Account user image"><img class="header-left-link-image" src="images/user.svg" /></a>
+      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank"  role="button">Admin Username</a>
+      <a class="header-account-down-arrow" href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" role="button" aria-expanded="false" aria-label="Account dropdown button"><img class="header-middle-link-image"  src="images/sort-down.svg" /></a>
     </section>
-
     <section class="header-logo">
-      <a href="#"><img src="images/header-logo.png" /></a>
+      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank"><img src="images/header-logo.png" aria-label="Nintendo logo"/></a>
     </section>
-
-    <ul class="main-nav">
-      <li><img class="header-left-link-image" src="images/share.svg" />
-          <h4>Video Games</h4>
-      </li>
-      <li>
-      <img class="header-middle-link-image"  src="images/list.svg" />
-      <h4>Playlists</h4>
-      </li> 
-      <li>
-        <img class="header-right-link-image"  src="images/person.svg" />
-        <h4>Personal Videos</h4>
-      </li>
-    </ul>
-
-    </section>
-
+    <nav role="navigation">
+      <ul>
+        <li>
+          <img class="header-left-link-image" src="images/share.svg" aria-label="Share website Icon"/>
+          <h4><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Share Website</a></h4>
+        </li>
+        <li>
+          <img class="header-middle-link-image"  src="images/list.svg" aria-label="Game Heros Icon"/>
+          <h4><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Game Heros</a></h4>
+        </li> 
+        <li>
+          <img class="header-right-link-image"  src="images/person.svg" aria-label="Location Icon"/>
+          <h4><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Location</a></h4>
+        </li>
+      </ul>
+    </nav>
   </header>
-
   <main>
-
     <h1>Video Game Heros</h1>
     <section class="grid">
-
-      <section class="card one">
-        <article class="card-header-image">
-          <article class="hero-icon">
-            <img src="images/bubble-bobble-heros.png" />
+      
+      <section class="card one" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
           </article>
           <article class="card-views">
-            <p>Views</p>
-            <p class="card-views-count">02</p>
-          </article>
-          <article class="card-share-link">
-            <a href="#"><img src="images/reply.svg" /></a>
+            <p>Likes</p>
+            <p class="card-views-count">28</p>
           </article>
           <article class="card-header-border">
           </article>
         </article>
-
-        <label for="toggle-1">Hero profile</label>
-        <input type="checkbox" id="toggle-1">
-
-        <article class="card-info card-one">
+        <label for="toggle-one">Hero profile</label>
+        <input type="checkbox" id="toggle-one" aria-hidden="true">
+        <article class="card-info one">
+          <article class="toggle-card-content">
           <h2>Bub & Bob</h2>
           <p class="timestamp">Bubble dragons</p>
           <article class="card-main-link">
-            <p>Ability to entrap enemies in bubbles and pop the bubbles to destroy them. Their goal is to save their girlfriends from Cave of Monsters.</p  >
+            <p>Ability to entrap enemies in bubbles and pop the bubbles to destroy them. Their goal is to save their girlfriends from Cave of Monsters.</p>
           </article>
           <p class="card-small-header">
             Video Game
           </p>
           <h3>Bubble Bobble</h3>
           <p class="attachments-playlist-title card-small-header">
-            Origin
+            Location
           </p>
           <p class="card-attachments-count">
             Japan
           </p>
         </article>
           <article class="card-stripes">
-            <img src="images/card-stripes.png"/>
+            <img src="images/card-stripes.png" aria-hidden="true"/>
           </article>
+        </article>
       </section>
 
-
-      <section class="card two">
-        <article class="card-header-image">
-          <article class="hero-icon">
-            <img src="images/river-city-ransom-heros.png" />
+      <section class="card two" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
           </article>
           <article class="card-views">
-            <p>Views</p>
-            <p class="card-views-count">02</p>
-          </article>
-          <article class="card-share-link">
-            <a href="#"><img src="images/reply.svg" /></a>
+            <p>Likes</p>
+            <p class="card-views-count">10</p>
           </article>
           <article class="card-header-border">
           </article>
         </article>
-
-        <label for="toggle-2">Hero profile</label>
-        <input type="checkbox" id="toggle-2">
-
-        <article class="card-info card-two">
+        <label for="toggle-two">Hero profile</label>
+        <input type="checkbox" id="toggle-two" aria-hidden="true">
+        <article class="card-info two">
+          <article class="toggle-card-content">
           <h2>Alex & Ryan</h2>
-          <p class="timestamp">High School Students</p>
+          <p class="timestamp">High school students</p>
           <article class="card-main-link">
-            <p>High school students Alex and Ryan cross River City in an attempt to rescue River City High and Ryan's girlfriend Cyndi from the clutches of a villain called "Slick".</p  >
+            <p>High school students Alex and Ryan as they cross River City in an attempt to rescue River City High and Ryan's girlfriend Cyndi from the clutches of a villain called "Slick"</p>
           </article>
           <p class="card-small-header">
             Video Game
           </p>
           <h3>River City Ransom</h3>
           <p class="attachments-playlist-title card-small-header">
-            Origin
+            Location
           </p>
           <p class="card-attachments-count">
             Japan
           </p>
+        </article>
           <article class="card-stripes">
-            <img src="images/card-stripes.png"/>
+            <img src="images/card-stripes.png" aria-hidden="true"/>
           </article>
         </article>
       </section>
 
-
-      <section class="card three">
-        <article class="card-header-image">
-          <article class="hero-icon">
-            <img src="images/burger-time-hero.png" />
+      <section class="card three" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
           </article>
           <article class="card-views">
-            <p>Views</p>
-            <p class="card-views-count">02</p>
-          </article>
-          <article class="card-share-link">
-            <a href="#"><img src="images/reply.svg" /></a>
+            <p>Likes</p>
+            <p class="card-views-count">4</p>
           </article>
           <article class="card-header-border">
           </article>
         </article>
-
-         <label for="toggle-3">Hero profile</label>
-        <input type="checkbox" id="toggle-3">
-
-        <article class="card-info card-three">
-          <h2>Peter Pepper</h2>
-          <p class="timestamp">Chef</p>
+        <label for="toggle-three">Hero profile</label>
+        <input type="checkbox" id="toggle-three" aria-hidden="true">
+        <article class="card-info three">
+          <article class="toggle-card-content">
+          <h2>Link</h2>
+          <p class="timestamp">Hylian child</p>
           <article class="card-main-link">
-            <p>Peter Pepper is trying to make all the burgers while avoiding those standing in his way, Mr. Hot Dog, Mr. Pickle, and Mr. Egg.</p  >
+            <p>Link's mission is to save Princess Zelda from Ganon, the leader of a race of desert brigands called the Gerudo.</p>
           </article>
           <p class="card-small-header">
             Video Game
           </p>
-          <h3>BurgerTime</h3>
+          <h3>The Legend of Zelda</h3>
           <p class="attachments-playlist-title card-small-header">
-            Origin
+            Location
+          </p>
+          <p class="card-attachments-count">
+            Hyrule
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png" aria-hidden="true"/>
+          </article>
+        </article>
+      </section>
+
+      <section class="card four" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
+          </article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">9</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-four">Hero profile</label>
+        <input type="checkbox" id="toggle-four" aria-hidden="true">
+        <article class="card-info four">
+          <article class="toggle-card-content">
+          <h2>Ninja Turtles</h2>
+          <p class="timestamp">Mutant turtles</p>
+          <article class="card-main-link">
+            <p>Leonardo, Raphael, Michelangelo, and Donatello try to rescue their reporter friend April O'Neil, who is being held captive by Bebop and Rocksteady somewhere in the city.</p>
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>Teenage Mutant Ninja Turtles</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
+          </p>
+          <p class="card-attachments-count">
+            New York
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png" aria-hidden="true"/>
+          </article>
+        </article>
+      </section>
+
+      <section class="card five" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
+          </article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">13</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-five">Hero profile</label>
+        <input type="checkbox" id="toggle-five" aria-hidden="true">
+        <article class="card-info five">
+          <article class="toggle-card-content">
+          <h2>Mario & Luigi</h2>
+          <p class="timestamp">Plummers</p>
+          <article class="card-main-link">
+            <p>The Mario brothers have to investigate the sewers of New York after strange creatures have been appearing down there. Their objective is to defeat all of the enemies.</p>
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>Mario Bros</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
+          </p>
+          <p class="card-attachments-count">
+            New York
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png" aria-hidden="true"/>
+          </article>
+        </article>
+      </section>
+
+      <section class="card six" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
+          </article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">19</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-six">Hero profile</label>
+        <input type="checkbox" id="toggle-six" aria-hidden="true">
+        <article class="card-info six">
+          <article class="toggle-card-content">
+          <h2>Kirby</h2>
+          <p class="timestamp">Marshmallow puff</p>
+          <article class="card-main-link">
+            <p>King Dedede has stolen the Star Rod and broken it into seven pieces. Kirby decides to track down the fragments of the Star Rod and bring them back to the Fountain of Dreams in order to restore everyone's dreams.</p>
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>Kirby's Adventure</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
+          </p>
+          <p class="card-attachments-count">
+            Pop Star
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png" aria-hidden="true"/>
+          </article>
+        </article>
+      </section>
+
+      <section class="card seven" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
+          </article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">05</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-seven">Hero profile</label>
+        <input type="checkbox" id="toggle-seven" aria-hidden="true">
+        <article class="card-info seven">
+          <article class="toggle-card-content">
+          <h2>Pfc. Bill Rizer and Pfc. Lance Bean</h2>
+          <p class="timestamp">Comandos</p>
+          <article class="card-main-link">
+            <p>In 2633, the evil Red Falcon Organization have set a base on the Galuga archipelago near New Zealand in a plot to conquer the world. Two commandos are sent to the island to destroy the enemy forces.</p>
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>Contra</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
+          </p>
+          <p class="card-attachments-count">
+            New Zealand
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png" aria-hidden="true"/>
+          </article>
+        </article>
+      </section>
+
+      <section class="card eight" role="hero card">
+        <article class="card-header-img">
+          <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="toggle-img" aria-label="Share hero card"><img src="images/reply.svg" /></a>
+          <article class="hero-img" aria-label="Game hero image">
+          </article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">17</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-eight">Hero profile</label>
+        <input type="checkbox" id="toggle-eight" aria-hidden="true">
+        <article class="card-info eight">
+          <article class="toggle-card-content">
+          <h2>Pac-Man</h2>
+          <p class="timestamp">Cheese monster</p>
+          <article class="card-main-link">
+            <p>Pac-Man navigates through a maze containing various dots, known as Pac-Dots, and four multi-colored ghosts: Blinky, Pinky, Inky, and Clyde. The goal of the game is to accumulate points by eating all the Pac-Dots in the maze.</p>
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>Pac-Man</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
+          </p>
+          <p class="card-attachments-count">
+            Taiwan
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png" aria-hidden="true"/>
+          </article>
+        </article>
+      </section>
+
+    </section>
+  </main>
+
+
+</body>
+</html>
+
+<!-- 
+
+
+
+      <section class="card two">
+        <article class="card-header-img">
+          <label for="toggle-two-img" class="toggle-img"><img src="images/reply.svg" /></label>
+          <input type="checkbox" id="toggle-two-img">
+          <article class="hero-img"></article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">02</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-two">Hero profile</label>
+        <input type="checkbox" id="toggle-two">
+        <article class="card-info two">
+          <article class="toggle-card-content">
+          <h2>Alex & Ryan</h2>
+          <p class="timestamp">High school students</p>
+          <article class="card-main-link">
+            <p>The plot follows high school students Alex and Ryan as they cross River City in an attempt to rescue River City High and Ryan's girlfriend Cyndi from the clutches of a villain called "Slick"</p  >
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>River City Ransom</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
           </p>
           <p class="card-attachments-count">
             Japan
           </p>
+        </article>
           <article class="card-stripes">
             <img src="images/card-stripes.png"/>
           </article>
         </article>
       </section>
 
-
-    </section>
-
-  </main>
-
-<script src="js/scripts.js"></script>
-</body>
-</html>
+   <section class="card eight">
+        <article class="card-header-img">
+          <label for="toggle-three-img" class="toggle-img"><img src="images/reply.svg" /></label>
+          <input type="checkbox" id="toggle-three-img">
+          <article class="hero-img"></article>
+          <article class="card-views">
+            <p>Likes</p>
+            <p class="card-views-count">02</p>
+          </article>
+          <article class="card-header-border">
+          </article>
+        </article>
+        <label for="toggle-three">Hero profile</label>
+        <input type="checkbox" id="toggle-three">
+        <article class="card-info three">
+          <article class="toggle-card-content">
+          <h2>Link</h2>
+          <p class="timestamp">Hylian child</p>
+          <article class="card-main-link">
+            <p>Link's mission is to save Princess Zelda from Ganon, the leader of a race of desert brigands called the Gerudo.</p>
+          </article>
+          <p class="card-small-header">
+            Video Game
+          </p>
+          <h3>The Legend of Zelda</h3>
+          <p class="attachments-playlist-title card-small-header">
+            Location
+          </p>
+          <p class="card-attachments-count">
+            Hyrule
+          </p>
+        </article>
+          <article class="card-stripes">
+            <img src="images/card-stripes.png"/>
+          </article>
+        </article>
+      </section>
+ -->
